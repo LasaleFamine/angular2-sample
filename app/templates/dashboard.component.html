@@ -1,0 +1,11 @@
+<h3>Top devices</h3>
+<div class="grid grid-pad">
+	<div 
+		*ngFor="#device of devices"
+		(click)="goToDetail(device)" 
+		class="col-1-4">
+		<div class="module device">
+			<h4>{{device.name}}</h4>
+		</div>
+	</div>
+</div>
